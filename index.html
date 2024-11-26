@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice Trionfo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Calcolatrice Trionfo</h1>
+        <input type="text" id="game-name" placeholder="Nome della partita">
+        <div id="scores">
+            <p>Squadra A: <span id="score-a">0</span></p>
+            <p>Squadra B: <span id="score-b">0</span></p>
+        </div>
+        <div id="buttons">
+            <div id="number-buttons">
+                <!-- Genera bottoni da 0 a 11 -->
+                <button class="number" data-value="0">0</button>
+                <button class="number" data-value="1">1</button>
+                <button class="number" data-value="2">2</button>
+                <button class="number" data-value="3">3</button>
+                <button class="number" data-value="4">4</button>
+                <button class="number" data-value="5">5</button>
+                <button class="number" data-value="6">6</button>
+                <button class="number" data-value="7">7</button>
+                <button class="number" data-value="8">8</button>
+                <button class="number" data-value="9">9</button>
+                <button class="number" data-value="10">10</button>
+                <button class="number" data-value="11">11</button>
+                <!-- Continua fino a 11 -->
+            </div>
+            <div id="cricca-buttons">
+                <button id="cricca-a">Cricca A</button>
+                <button id="cricca-b">Cricca B</button>
+            </div>
+            <button id="submit">Inserisci e Continua</button>
+        </div>
+        <div id="winner" style="display: none;">
+            <h2 id="winner-message"></h2>
+            <p id="final-scores"></p>
+            <button id="reset">Ricomincia</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
